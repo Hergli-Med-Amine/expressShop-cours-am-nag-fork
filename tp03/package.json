@@ -19,5 +19,6 @@
     "@testcontainers/postgresql": "12.2.1",
     "jest": "30.5.2",
     "supertest": "7.3.1"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
