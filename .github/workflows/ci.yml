@@ -1,8 +1,17 @@
 name: CI
-on: push
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["**.md"]
+  pull_request:
+    paths-ignore: ["**.md"]
+  workflow_call:
+
+permissions:
+  contents: read
 
 jobs:
-  test:
+    test:
     runs-on: ubuntu-latest
     defaults:
       run:
