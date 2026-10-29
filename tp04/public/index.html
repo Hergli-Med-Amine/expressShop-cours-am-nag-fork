@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExpressShop</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; color: #14202b; }
+    h1 { margin-bottom: 0.25rem; }
+    label { display: block; margin: 1rem 0 0.25rem; font-weight: 600; }
+    input { width: 100%; padding: 0.5rem; box-sizing: border-box; }
+    article { border: 1px solid #c9d1d9; border-radius: 6px; padding: 0.75rem 1rem; margin: 0.75rem 0; }
+    article h2 { margin: 0 0 0.25rem; font-size: 1.1rem; }
+    article p { margin: 0.15rem 0; }
+    button { margin-top: 0.5rem; padding: 0.4rem 0.9rem; cursor: pointer; }
+    #message { min-height: 1.5rem; font-weight: 600; }
+    #message.error { color: #b42318; }
+    #message.ok { color: #15794f; }
+  </style>
+</head>
+<body>
+  <h1>ExpressShop</h1>
+  <p>Commandez un article à l'unité.</p>
+
+  <label for="email">Votre e-mail</label>
+  <input id="email" type="text" autocomplete="email">
+
+  <p id="message" role="status"></p>
+
+  <section id="products" aria-label="Produits"></section>
+
+  <script src="shop.js"></script>
+</body>
+</html>
